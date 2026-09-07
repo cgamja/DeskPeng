@@ -72,7 +72,7 @@ cd src-tauri && cargo test    # Rust
 
 ```bash
 npm run tauri build
-open src-tauri/target/release/bundle/macos/penguin.app
+open src-tauri/target/release/bundle/macos/DeskPeng.app
 ```
 
 - [ ] 번들 앱에서 이벤트 발생 시 macOS 알림이 도착한다

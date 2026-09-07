@@ -698,6 +698,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "deskpeng"
+version = "0.1.0"
+dependencies = [
+ "objc2-app-kit",
+ "serde",
+ "serde_json",
+ "tauri",
+ "tauri-build",
+ "tauri-plugin-opener",
+ "tauri-plugin-positioner",
+ "tauri-plugin-single-instance",
+ "tauri-plugin-store",
+]
+
+[[package]]
 name = "digest"
 version = "0.10.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2394,21 +2409,6 @@ dependencies = [
  "redox_syscall",
  "smallvec",
  "windows-link 0.2.1",
-]
-
-[[package]]
-name = "penguin"
-version = "0.1.0"
-dependencies = [
- "objc2-app-kit",
- "serde",
- "serde_json",
- "tauri",
- "tauri-build",
- "tauri-plugin-opener",
- "tauri-plugin-positioner",
- "tauri-plugin-single-instance",
- "tauri-plugin-store",
 ]
 
 [[package]]

@@ -499,6 +499,11 @@
       `body.tsx`의 도형을 그대로 옮긴 `src/assets/penguin/tray.svg`에서 굽고 여백을
       잘라내 41×72로 채웠다. 흰 배·눈은 템플릿이라 칠이 아니라 마스크로 뚫는다.
       `tray-icon.test.ts`가 도형 어긋남과 여백을 잡는다 (2026-09-07)
+- [x] **이름을 DeskPeng으로 통일했다** — 레포 이름 `individual-manager`는 v1.0 "개인 총괄
+      비서"에서 온 것이고 앱 이름은 `Penguin`이라 셋이 따로 놀았다. 패키지·crate·
+      `productName`·번들 식별자(`com.kangr.deskpeng`)·문서 제목을 DeskPeng으로 모았다.
+      **동물로서의 `penguin`은 그대로다** — `src/assets/penguin/`, `.penguin` 클래스,
+      `<Penguin>` 컴포넌트, `docs/plans/*`의 지나간 기록은 안 건드렸다 (2026-09-07)
 - [x] **테마 설정 — 시스템/라이트/다크** (2026-09-01 사용자 지시, 위 템플릿 아이콘의 연장) —
       설정 창 겉모습을 정한다(`app.set_theme` — 웹뷰 prefers-color-scheme이 뒤집혀 CSS
       추가 없이 됨). 시작 시 Rust가 저장값을 읽어 건다(`theme_from` — 깨진 값은 시스템으로).
