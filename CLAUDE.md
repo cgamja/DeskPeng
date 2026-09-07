@@ -1,4 +1,4 @@
-# Penguin — 바탕화면 펭귄 macOS 상주 앱
+# DeskPeng — 바탕화면 펭귄 macOS 상주 앱
 
 바탕화면에 펭귄 한 마리가 사는 개인용 macOS 상주 앱. 사용자는 본인 1명, 배포 없음.
 펭귄은 걷고·헤엄치고·자고·낚시하고·미끄러지고, 때리면 방망이를 휘두르며 싸가지 없게 군다.
@@ -78,7 +78,7 @@ docs/solutions/       재발 방지용 학습 기록 — 셸을 건드리기 전
 새 모션을 얹을 때 CSS(`pg--*`)와 `pet-css.test.ts`의 `ALL_BEHAVIORS`를 빠뜨려도
 Rust는 아무 말도 하지 않는다.
 
-스택은 Tauri v2 + React 19 + TypeScript + Vite 7 (PRD Q1 확정). Rust는 단일 crate `penguin`.
+스택은 Tauri v2 + React 19 + TypeScript + Vite 7 (PRD Q1 확정). Rust는 단일 crate `deskpeng`.
 
 ## 반드시 지키는 규칙 (CONVENTIONS.md 요약)
 
