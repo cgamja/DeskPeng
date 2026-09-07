@@ -1,0 +1,38 @@
+<!--
+  메뉴바 트레이 아이콘의 원본. 굽힌 산출물은 `src-tauri/icons/tray.png`이고
+  `lib.rs`가 `include_bytes!`로 넣는다.
+
+  도형은 `body.tsx`에서 그대로 옮겼다 — `tray-icon.test.ts`가 둘의 `d`가
+  어긋나지 않게 지킨다.
+
+  **템플릿 아이콘이라 macOS는 알파만 본다.** 색은 버려지므로 흰 배와 눈은
+  칠이 아니라 마스크로 뚫는다. 배 타원은 `body.tsx`보다 좁다 — 18pt에서
+  몸통 테두리가 남아야 펭귄으로 읽힌다.
+
+  **viewBox의 여백은 PNG를 구울 때 잘라낸다.** tray-icon이 이미지 *전체* 높이를
+  18pt로 늘리므로, 남긴 여백만큼 펭귄이 작아진다 (전 아이콘이 그래서 작았다).
+  여기 viewBox가 정사각인 것은 QuickLook이 정사각 밖을 잘라내기 때문이다.
+
+  굽는 법 — `docs/plans/2026-09-07-029-feat-tray-penguin-silhouette-plan.md`
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 14 106 106" width="530" height="530">
+  <mask id="tray-cut">
+    <rect x="-5" y="14" width="106" height="106" fill="#fff" />
+    <ellipse cx="48" cy="81" rx="10.2" ry="18.5" fill="#000" />
+    <!-- 눈. 동공은 빼고 흰자만 뚫는다 — 이 크기에서 둘을 겹치면 뭉갠다. -->
+    <circle cx="57.5" cy="27.5" r="3" fill="#000" />
+  </mask>
+
+  <g mask="url(#tray-cut)">
+    <path d="M33 98 L16 111 L35 106 Z" />
+    <path d="M36 52 C27 59 24 76 29 88 C31 92 35 91 36 87 C38 75 39 61 39 54 Z" />
+    <rect x="44" y="104" width="4" height="9" rx="2" />
+    <path d="M46 112 L38 120 L52 120 Z" />
+    <rect x="54" y="104" width="4" height="9" rx="2" />
+    <path d="M56 112 L48 120 L63 120 Z" />
+    <path d="M50 40 C64 40 71 58 71 80 C71 101 62 113 50 113 C38 113 29 101 29 80 C29 58 36 40 50 40 Z" />
+    <circle cx="50" cy="30" r="16" />
+    <path d="M64 29 L77 32.5 L64 36.5 Z" />
+    <path d="M66 50 C76 57 80 75 74 89 C72 93 68 91 67 87 C64 74 63 60 64 52 Z" />
+  </g>
+</svg>
