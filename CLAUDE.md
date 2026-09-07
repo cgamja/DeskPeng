@@ -42,6 +42,7 @@ src/
     sounds/           음원. 안물 하나뿐이고 나머지 여덟 소리는 합성이다
     penguin/          index(조립·겹침 순서) · body · hula(훌라 차림) · gear(방망이·낚시)
                       hit(클릭 판정 상자 — Rust와 같은 수를 들고 있다)
+                      tray.svg(메뉴바 아이콘 원본 — 구운 PNG만 src-tauri/icons에 있다)
     props/            소품 — bat(커서 방망이) · bowling-ball · beach-ball · court
                       **React를 쓰지 않는다** (바닐라 창이 쓴다)
     assets.test.ts    그림 렌더 스냅샷 + props의 React 무의존 검사

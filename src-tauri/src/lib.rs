@@ -126,6 +126,9 @@ pub fn run() {
             let quit = MenuItem::with_id(app, "quit", "종료", true, None::<&str>)?;
             let menu = Menu::with_items(app, &[&quit])?;
 
+            // 아이콘 원본은 `src/assets/penguin/tray.svg`이고 이것은 구운 산출물이다.
+            // 여백 없이 실루엣에 딱 맞아야 한다 — tray-icon이 이미지 *전체* 높이를
+            // 18pt로 늘리므로 여백만큼 펭귄이 작아진다.
             TrayIconBuilder::with_id(TRAY_ID)
                 .icon(Image::from_bytes(include_bytes!("../icons/tray.png"))?)
                 .icon_as_template(true)
